@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:8.0.29
+    container_name: compasso-mysql
+    restart: always
+    networks:
+      - compose-bridge
+
+  redis:
+    image: redis
+    container_name: compasso-redis
+    restart: always
+    networks:
+      - compose-bridge
+    ports:
+      - 3307:3000
+
+networks:
+  compose-bridge:
+    driver: bridge    
