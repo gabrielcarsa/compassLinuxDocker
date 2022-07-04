@@ -5,7 +5,7 @@ interface grafica).
 
 ## Primeiros passos: Instalação do Oracle Linux
 
-Antes de instalarmos o sistema operacional deixamos a maquina virtual em modo NAT no Virtual Box.  
+Antes de instalarmos o sistema operacional deixamos a máquina virtual em modo NAT no Virtual Box.  
 
 ![nat](https://user-images.githubusercontent.com/63206031/177155691-f19922d4-ce0e-48ee-af8c-fd5727c1ee26.png)
 
@@ -76,7 +76,7 @@ Para verificar se baixou
 
     docker-compose --version
 
-Após isso criamos um diretório ymls, na home mesmo, esse diretório vai estar o arquivo do docker-compose o .yml
+Após isso criamos um diretório ymls esse diretório vai estar o arquivo do docker-compose o .yml
 
     mkdir ymls
     
@@ -86,7 +86,7 @@ Depois criamos o arquivo docker-compose.yml no diretório ymls
     
     touch docker-compose.yml
 
-Depois colocamos o conteúdo nesse arquivo, onde é dado as instruções da aplicação para criação. O conteúdo desse arquivo está nesse repositório. Após isso dentro do diretório /ymls executamos o comando para subir a aplicação
+Depois colocamos o conteúdo nesse arquivo, onde é dado as instruções da aplicação para criação. O conteúdo desse arquivo está nesse repositório. Depois criamos outro diretório arquivos-docker, com subdiretório db. No diretório arquivos-docker estará o arquivo dockerfile, seu conteúdo está nesse repositório também. Após esses passos, dentro do diretório /ymls executamos o comando para subir a aplicação
 
     sudo docker-compose up -d
     
@@ -150,5 +150,3 @@ E adicionamos mais uma linha da seguinte maneira:
     PREFIX=24
     
 Assim o colocamos um IP estático.
-
-
